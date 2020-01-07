@@ -74,7 +74,7 @@ $btnBorderColor: $primaryColor;
     text-align: justify;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .ba-col-sm-12 {
         width: 100%;
     }
@@ -124,52 +124,112 @@ $btnBorderColor: $primaryColor;
     }
 }
 
-@media screen and (max-width: 450px) {
-    .ba-col-xs-12 {
+@media screen and (min-width: 991px) {
+    .ba-col-md-12 {
         width: 100%;
     }
 
-    .ba-col-xs-11 {
+    .ba-col-md-11 {
         width: 96.66%;
     }
 
-    .ba-col-xs-10 {
+    .ba-col-md-10 {
         width: 83.3%;
     }
 
-    .ba-col-xs-9 {
+    .ba-col-md-9 {
         width: 74.97%;
     }
 
-    .ba-col-xs-8 {
+    .ba-col-md-8 {
         width: 66.62%;
     }
 
-    .ba-col-xs-7 {
+    .ba-col-md-7 {
         width: 58.3%;
     }
 
-    .ba-col-xs-6 {
+    .ba-col-md-6 {
         width: 50%;
     }
 
-    .ba-col-xs-5 {
+    .ba-col-md-5 {
         width: 41.65%;
     }
 
-    .ba-col-xs-4 {
+    .ba-col-md-4 {
         width: 33.3%;
     }
 
-    .ba-col-xs-3 {
+    .ba-col-md-3 {
         width: 24.98%;
     }
 
-    .ba-col-xs-2 {
+    .ba-col-md-2 {
         width: 16.66%;
     }
 
-    .ba-col-xs-1 {
+    .ba-col-md-1 {
         width: 8.33%;
     }
+
+    .hidden-md {
+        display: none !important;
+    }
 }
+
+@media screen and (max-width: 991px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
+// @media screen and (max-width: 450px) {
+//     .ba-col-xs-12 {
+//         width: 100%;
+//     }
+
+//     .ba-col-xs-11 {
+//         width: 96.66%;
+//     }
+
+//     .ba-col-xs-10 {
+//         width: 83.3%;
+//     }
+
+//     .ba-col-xs-9 {
+//         width: 74.97%;
+//     }
+
+//     .ba-col-xs-8 {
+//         width: 66.62%;
+//     }
+
+//     .ba-col-xs-7 {
+//         width: 58.3%;
+//     }
+
+//     .ba-col-xs-6 {
+//         width: 50%;
+//     }
+
+//     .ba-col-xs-5 {
+//         width: 41.65%;
+//     }
+
+//     .ba-col-xs-4 {
+//         width: 33.3%;
+//     }
+
+//     .ba-col-xs-3 {
+//         width: 24.98%;
+//     }
+
+//     .ba-col-xs-2 {
+//         width: 16.66%;
+//     }
+
+//     .ba-col-xs-1 {
+//         width: 8.33%;
+//     }
+// }
