@@ -71,19 +71,100 @@
 .ba-text-justify {
   text-align: justify; }
 
+@media screen and (max-width: 768px) {
+  .ba-col-sm-12 {
+    width: 100%; }
+  .ba-col-sm-11 {
+    width: 96.66%; }
+  .ba-col-sm-10 {
+    width: 83.3%; }
+  .ba-col-sm-9 {
+    width: 74.97%; }
+  .ba-col-sm-8 {
+    width: 66.62%; }
+  .ba-col-sm-7 {
+    width: 58.3%; }
+  .ba-col-sm-6 {
+    width: 50%; }
+  .ba-col-sm-5 {
+    width: 41.65%; }
+  .ba-col-sm-4 {
+    width: 33.3%; }
+  .ba-col-sm-3 {
+    width: 24.98%; }
+  .ba-col-sm-2 {
+    width: 16.66%; }
+  .ba-col-sm-1 {
+    width: 8.33%; } }
+
+@media screen and (max-width: 450px) {
+  .ba-col-xs-12 {
+    width: 100%; }
+  .ba-col-xs-11 {
+    width: 96.66%; }
+  .ba-col-xs-10 {
+    width: 83.3%; }
+  .ba-col-xs-9 {
+    width: 74.97%; }
+  .ba-col-xs-8 {
+    width: 66.62%; }
+  .ba-col-xs-7 {
+    width: 58.3%; }
+  .ba-col-xs-6 {
+    width: 50%; }
+  .ba-col-xs-5 {
+    width: 41.65%; }
+  .ba-col-xs-4 {
+    width: 33.3%; }
+  .ba-col-xs-3 {
+    width: 24.98%; }
+  .ba-col-xs-2 {
+    width: 16.66%; }
+  .ba-col-xs-1 {
+    width: 8.33%; } }
+
+.ba-main-wrapper {
+  min-height: 100vh;
+  display: flex; }
+
+.ba-header {
+  background-color: #303841; }
+
+.ba-logo {
+  display: block;
+  color: #ffc12d;
+  font-weight: 800;
+  font-size: 1.75rem;
+  text-decoration: none;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 991px) {
+    .ba-logo {
+      margin-bottom: 50px; } }
+
 .ba-menu {
   display: flex;
-  align-items: center;
-  list-style: none; }
-
-.ba-menu__link {
-  color: inherit;
-  text-decoration: none; }
-
-.btn {
-  background: pink;
-  min-width: 100px;
-  padding: 0 1em; }
-  .btn:hover {
-    background-color: pink;
-    border-color: #ff748c; }
+  list-style: none;
+  flex-direction: column;
+  color: #fff;
+  margin: 0;
+  padding: 0; }
+  .ba-menu__link {
+    position: relative;
+    display: block;
+    color: inherit;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 1rem; }
+    .ba-menu__link:after {
+      content: '';
+      background-color: rgba(255, 255, 255, 0.25);
+      position: absolute;
+      display: block;
+      height: 1px;
+      bottom: 0;
+      left: 1rem;
+      right: 1rem; }
+    .ba-menu__link .active {
+      background-color: #442a9d; }
+    .ba-menu__link:hover, .ba-menu__link:focus {
+      background-color: #5535c5; }

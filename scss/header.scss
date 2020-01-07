@@ -1,0 +1,57 @@
+.ba-header {
+    background-color: $primaryColor;
+    // height: 100%;
+}
+
+.ba-logo {
+    display: block;
+    color: $yellow;
+    font-weight: 800;
+    font-size: 1.75rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width:991px) {
+        margin-bottom: 50px;
+    }
+}
+
+.ba-menu {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+
+    // &__item {}
+
+    &__link {
+        position: relative;
+        display: block;
+        color: inherit;
+        font-size: 1.125rem;
+        text-decoration: none;
+        padding: 1rem;
+
+        &:after {
+            content: '';
+            background-color: rgba(255, 255, 255, .25);
+            position: absolute;
+            display: block;
+            height: 1px;
+            bottom: 0;
+            left: 1rem;
+            right: 1rem;
+        }
+
+        & .active {
+            background-color: #442a9d;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: lighten(#442a9d, 10);
+        }
+    }
+}
